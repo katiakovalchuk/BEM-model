@@ -1,0 +1,154 @@
+@use '../../variables.scss' as v;
+
+.Footer {
+
+  &__text {
+    padding: 24px;
+    font-family: v.$secondary-font;
+    color: #FFFFFF;
+    background-color: #14202D;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+}
+
+.footer-menu {
+  position: relative;
+  top: 45px;
+  z-index: 1;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  width: 1060px;
+  justify-content: center;
+  height: 94px;
+  box-shadow: 0 4px 15px 0 #00000040;
+
+  &__list {
+    justify-content: center;
+  }
+}
+
+.contact {
+  display: flex;
+}
+
+.contact-info {
+  background-image: url("../../../public/contact-bg.png");
+  background-position: center;
+  flex-basis: 50%;
+  height: 715px;
+  color: #FFFFFF;
+  opacity: 80%;
+
+  &__inner {
+    width: 370px;
+  }
+
+  &__outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: v.$base-color;
+    opacity: 75%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+  }
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__text {
+    margin-left: 20px;
+    font-family: v.$secondary-font;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  background-color: #EEEEEE;
+  padding: 30px;
+
+  &__header {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: v.$base-font;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  &__item {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    font-family: v.$base-font;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+
+    &--half-size {
+      width: calc(50% - 8px);
+    }
+
+    &[type='email'] {
+      margin-right: 16px;
+    }
+  }
+
+  &__item:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+  }
+
+  &__inner {
+    width: 100%;
+    max-width: 540px;
+  }
+
+  &__input {
+    width: calc(50% - 15px);
+    height: 100%;
+  }
+
+  &__text-area {
+    resize: none;
+    height: 160px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    display: block;
+    margin: 15px auto 0;
+    padding: 16px 70px;
+    filter: drop-shadow(0px 8px 22px rgba(66, 66, 66, 0.25));
+    transition: 1s;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    background: rgb(26, 55, 145);
+    background: radial-gradient(circle, #1A3791FF 0%, #449DE3FF 51%, #2041A7FF 100%);
+  }
+
+  &__btn:hover {
+    transform: scale(1.05);
+    transition: 1s;
+  }
+}

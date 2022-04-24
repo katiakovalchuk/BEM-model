@@ -1,0 +1,102 @@
+@use '../../variables.scss' as v;
+
+.Portfolio{
+  position: relative;
+  margin: 0 auto;
+  padding: 45px 40px;
+  max-width: 1320px;
+
+  &__header{
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 870px;
+    text-align: center;
+  }
+  &__title{
+    margin-bottom: 34px;
+    font-family: 'PT Serif', serif;
+    font-size: 42px;
+    letter-spacing: 0.1em;
+  }
+  &__description{
+    font-family: v.$base-font;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.Portfolio-item{
+  display: flex;
+  padding: 70px 0;
+
+  &__inner{
+    flex-basis: 50%;
+
+    &--right-align{
+      order: 1;
+      margin-left: -6%;
+    }
+  }
+  &__image{
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  &__text{
+    font-family: v.$base-font;
+    font-size: 22px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #504A4A;
+  }
+  &__description-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: 56%;
+    background-color: #6279FF;
+    height: 353px;
+    max-height: 353px;
+    color: #FFFFFF;
+    box-shadow: 4px 4px 20px 0 #E2E2E2AD;
+
+    &--left-align{
+      padding: 45px 50px 45px 112px;
+      margin-top: 6%;
+      margin-left: -6%;
+    }
+    &--right-align{
+      padding: 45px 112px 45px 50px;
+      margin-top: 6%;
+      text-align: right;
+    }
+  }
+  &__title{
+    margin-bottom: 16px;
+    font-family: 'PT Serif', serif;
+    font-size: 22px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+  }
+  &__description{
+    font-family: v.$base-font;
+    font-size: 17px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.chat{
+
+  &__logo{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 80px;
+    height: 75px;
+    cursor: pointer;
+  }
+}

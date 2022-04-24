@@ -1,0 +1,70 @@
+@use '../../variables.scss' as v;
+
+.Header{
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+  }
+  &__language{
+    padding: 30px;
+    cursor: pointer;
+    border-left: 1px solid #8D8D8D80;
+    letter-spacing: 0.1em;
+    color: #8D8D8D;
+    font-family: v.$base-font;
+    font-size: 22px;
+  }
+}
+
+.menu{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+    min-width: 600px;
+    max-width: 800px;
+    list-style-type: none;
+    font-size: 22px;
+
+  }
+  &__list-item{
+    text-transform: uppercase;
+  }
+  &__link{
+    padding: 36px;
+    height: 100%;
+    cursor: pointer;
+    font-family: v.$secondary-font;
+    color: v.$base-color;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+  }
+  &__link:hover{
+    background-color: #BCC3C933;
+  }
+}
+
+.logo{
+  justify-content: center;
+
+  &__link{
+    display: block;
+    height: 100%;
+    padding: 30px 30px;
+    text-decoration: none;
+    color: #FFFFFFFF;
+    background-color: v.$base-color;
+    font-family: v.$base-font;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+  }
+}
